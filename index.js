@@ -39,7 +39,7 @@ Response, JSON Unix & UTC:
     "utc": "Fri, 25 Dec 2015 00:00:00 GMT"
   }
 */
-app.get("/api/:timestamp", (req, res) => {
+app.get("/api/:timestamp?", (req, res) => {
   const timestamp = req.params.timestamp;
   let date;
 
